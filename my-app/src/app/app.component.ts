@@ -8,8 +8,9 @@ import { ValueConverter } from '@angular/compiler/src/render3/view/template';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  onCounted(value: number)
-  {this.total += value;
-  }
-  }
+  name = "BoJangles";
+  title = "Mr.";
+  imgUrl= "https://i.imgur.com/ijGvcFr.jpg";
+  address = "";
 
+}
