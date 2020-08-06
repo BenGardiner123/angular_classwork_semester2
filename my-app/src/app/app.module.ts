@@ -3,12 +3,14 @@ import { NgModule } from '@angular/core';
 import { addressComponent}from './address.component';
 import { AppComponent } from './app.component';
 import { CityComponent } from './city/city.component';
+import { CounterComponent } from './counter/counter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     addressComponent,
-    CityComponent
+    CityComponent,
+    CounterComponent
   ],
   imports: [
     BrowserModule
