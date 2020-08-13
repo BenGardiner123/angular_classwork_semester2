@@ -1,10 +1,7 @@
+<h1>{{title}}</h1>
 
-<div class="viewBox">
-<app-counter [profilePicUrl]="imgUrl" title="Mr." name="Ben Gardiner" address="51 Somewhere st, Wisconsin"></app-counter>
-<app-counter profilePicUrl="https://i.imgur.com/CMAFTuK.jpeg" title="Dr." name="Jamshid Bulwa" address="99.9 And a Half St, New York"></app-counter>
-<app-counter profilePicUrl="https://i.imgur.com/MidVjdX.jpeg" title="Mr." name="Akira Namasaka" address="15345345 First Strest, Toledo"></app-counter>
-<app-counter profilePicUrl="https://i.imgur.com/5lckVAJ.jpeg" title="Mr." name="Tony Beroni" address="15 Anywhere, Germany"></app-counter>
-<app-counter profilePicUrl="https://i.imgur.com/D0vgwP8.jpeg" title="Mr." name="Orange Baby" address="10 Beyond the Realm, Earth"></app-counter>
-<app-counter profilePicUrl="https://i.imgur.com/tkQtl1h.jpeg" title="Mr." name="Many Names" address="15345345 First Strest, Toledo"></app-counter>
-<app-counter profilePicUrl="https://i.imgur.com/Mc4W8WI.jpeg" title="Mr." name="YoU KnOw DiS" address="15345345 First Strest, Toledo"></app-counter>
+<button (click)="onToggleContacts()">Toggle Contacts</button>
+
+<div *ngIf="showContacts === true">
+    <app-contact *ngFor="let contact of contacts" [contact]="contact"></app-contact>
 </div>

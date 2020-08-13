@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { ValueConverter } from '@angular/compiler/src/render3/view/template';
-
+import { Contact } from './contact/contact';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +7,25 @@ import { ValueConverter } from '@angular/compiler/src/render3/view/template';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  name = "BoJangles";
-  title = "Mr.";
-  imgUrl= "https://i.imgur.com/ijGvcFr.jpg";
-  address = "";
+  title = 'Week2';
+  
+  contacts: Contact[] = [
+    new Contact("Bob", "Mx", "1 Queen Street, Melbs", "https://placehold.it/200x200"),
+    new Contact("Frank", "Mr", "2 Queen Street, Melbs", "https://placehold.it/200x200"),
+    new Contact("Jess", "Ms", "3 Queen Street, Melbs", "https://placehold.it/200x200"),
+    new Contact("George", "Mx", "4 Queen Street, Melbs", "https://placehold.it/200x200"),
+  ];
 
+
+showContacts: boolean = true;
+
+onToggleContacts() {
+  // if(this.showContacts == true){
+  //   this.showContacts = false;
+  // }else {
+  //   this.showContacts = true;
+  // }
+  this.showContacts = !this.showContacts;
+}
+  
 }

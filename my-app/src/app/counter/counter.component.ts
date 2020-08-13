@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
+/* import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
 
 @Component({
   selector: 'app-counter',
@@ -29,4 +29,4 @@ export class CounterComponent implements OnInit {
 
 
 
-}
+} */
