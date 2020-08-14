@@ -7,25 +7,24 @@ import { Contact } from './contact/contact';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Week2';
+  title = 'Welcome to the coolest contacts list in the world';
   
   contacts: Contact[] = [
-    new Contact("Bob", "Mx", "1 Queen Street, Melbs", "https://placehold.it/200x200"),
-    new Contact("Frank", "Mr", "2 Queen Street, Melbs", "https://placehold.it/200x200"),
-    new Contact("Jess", "Ms", "3 Queen Street, Melbs", "https://placehold.it/200x200"),
-    new Contact("George", "Mx", "4 Queen Street, Melbs", "https://placehold.it/200x200"),
+    new Contact("Bill", "Mx", "10 Union Pl, Melbs", "https://i.imgur.com/CMAFTuK.jpeg"),
+    new Contact("Sonny", "Mr", "50 Sussex St Melbs", "https://i.imgur.com/MidVjdX.jpeg"),
+    new Contact("William", "Ms", "30 King Street, Melbs", "https://i.imgur.com/tkQtl1h.jpeg"),
+    new Contact("Kent", "Mx", "88 Jack Street, Melbs", "https://i.imgur.com/D0vgwP8.jpeg"),
   ];
 
+  
 
 showContacts: boolean = true;
 
 onToggleContacts() {
-  // if(this.showContacts == true){
-  //   this.showContacts = false;
-  // }else {
-  //   this.showContacts = true;
-  // }
   this.showContacts = !this.showContacts;
 }
-  
+
+
+
+
 }
