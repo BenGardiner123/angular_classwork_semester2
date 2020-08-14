@@ -6,8 +6,8 @@
     
     
     <div class="nameBox">
-        <h1>
-        {{contact.title}}. {{contact.name}}
+        <h1 [class.title-mr]="contact.title == 'Mr'">
+            {{contact.title}}. {{contact.name}}
         </h1>
         <p>{{contact.address}}</p>
     </div>

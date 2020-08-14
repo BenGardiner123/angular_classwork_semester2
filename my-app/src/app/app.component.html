@@ -2,7 +2,14 @@
 
 <button (click)="onToggleContacts()">Toggle Contacts</button>
 
+
 <div *ngIf="showContacts === true">
-    <app-contact *ngFor="let contact of contacts" [contact]="contact"></app-contact>
+    <app-contact (click)="onRemove(contact)" *ngFor="let contact of contacts" [contact]="contact"></app-contact>
 </div>
+
+<div *ngIf="showContacts === false && contacts.length == 0">
+    <h1 >Your list on contacts is currently empty!</h1>
+</div>
+
+
 

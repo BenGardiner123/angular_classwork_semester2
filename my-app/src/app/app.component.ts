@@ -18,13 +18,18 @@ export class AppComponent {
 
   
 
-showContacts: boolean = true;
+  showContacts: boolean = true;
 
-onToggleContacts() {
-  this.showContacts = !this.showContacts;
-}
+  onToggleContacts() {
+    this.showContacts = !this.showContacts;
+    
+  }
 
-
+  onRemove(contact: Contact)
+  {
+    let choosMe = this.contacts.indexOf(contact);
+    this.contacts.splice(choosMe, 1);
+  }
 
 
 }
