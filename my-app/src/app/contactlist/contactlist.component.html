@@ -1,0 +1,7 @@
+
+<div *ngIf="contactsService.showContacts === true">
+    <app-contact *ngFor="let contact of contactsService.contacts" [contact]="contact"></app-contact>
+</div>
+
+
+
