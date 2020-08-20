@@ -10,6 +10,8 @@ import { AccountService } from '../Services/account.service';
 })
 export class ProfileComponent implements OnInit {
 
+  username: string = null;
+
   public accountService: AccountService;
 
   

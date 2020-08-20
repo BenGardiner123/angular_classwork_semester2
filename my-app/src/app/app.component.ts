@@ -1,7 +1,5 @@
 import { AccountService } from './Services/account.service';
-import { ContactlistComponent } from './contactlist/contactlist.component';
 import { Component } from '@angular/core';
-import { Contact } from './contact/contact';
 
 
 @Component({
@@ -12,6 +10,7 @@ import { Contact } from './contact/contact';
 
 export class AppComponent {
   
+
   public accountService: AccountService;
 
   constructor(accountService: AccountService) {
