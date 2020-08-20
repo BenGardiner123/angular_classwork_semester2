@@ -16,12 +16,13 @@ export class AppComponent {
 
   constructor(accountService: AccountService) {
     
-    this.accountService = this.accountService;
+    this.accountService = accountService;
   }
 
+  title = 'ServicesExample';
   
   performLogin(){
-    this.accountService.login("Bob");
+    this.accountService.login("bob");
   }
 
  

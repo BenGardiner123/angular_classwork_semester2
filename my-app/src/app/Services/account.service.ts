@@ -3,14 +3,18 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
+
 export class AccountService {
 
+  username: string = null;
   
-
-  constructor() { 
+  constructor() 
+  { 
+    
   }
 
-  username: string = null;
+
+
 
    login(attempt: string)
    {
@@ -18,7 +22,8 @@ export class AccountService {
      {
        this.username = "bob"
      }
-     else{
+     else
+     {
        alert("yo, somthing wrong with your username brah!")
      }
    }   
