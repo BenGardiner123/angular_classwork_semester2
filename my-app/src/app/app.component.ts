@@ -2,6 +2,7 @@ import { AccountService } from './Services/account.service';
 import { Component } from '@angular/core';
 
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -21,7 +22,9 @@ export class AppComponent {
   title = 'ServicesExample';
   
   performLogin(){
+
     this.accountService.login("bob");
+
   }
 
  

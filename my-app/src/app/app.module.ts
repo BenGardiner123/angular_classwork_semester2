@@ -1,3 +1,4 @@
+import { AccountService } from './Services/account.service';
 import { ContactlistComponent } from './contactlist/contactlist.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -15,7 +16,9 @@ import { ProfileComponent } from './profile/profile.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    AccountService
+  ],
   bootstrap: [AppComponent]
 })
 

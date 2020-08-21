@@ -10,16 +10,21 @@ import { AccountService } from '../Services/account.service';
 })
 export class ProfileComponent implements OnInit {
 
-  username: string = null;
+  username: string | null = null;
 
   public accountService: AccountService;
 
   
   constructor(accountService: AccountService) {
     
-    this.accountService = this.accountService;
+    this.accountService = accountService;
   }
 
+  performLogin(){
+
+    this.accountService.login("bob");
+    
+  }
 
   ngOnInit(): void {
   }

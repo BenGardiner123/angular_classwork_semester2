@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 
 export class AccountService {
 
-  username: string = null;
+  username: string | null = null;
   
   constructor() 
   { 
@@ -14,11 +14,9 @@ export class AccountService {
   }
 
 
-
-
    login(attempt: string)
    {
-     if(attempt == "bob")
+     if(attempt == 'bob')
      {
        this.username = "bob"
      }
